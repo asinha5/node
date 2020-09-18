@@ -1,0 +1,7 @@
+build : required
+service:
+    - docker
+
+script:
+    - docker build -t abhi8sinha/node .
+    - docker images abhi8sinha/node 
