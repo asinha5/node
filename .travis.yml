@@ -5,3 +5,12 @@ service:
 script:
     - docker build -t abhi8sinha/node .
     - docker images abhi8sinha/node 
+
+before_deploy:
+    - docker login -u abhi8sinha -p Jan@2014
+
+deploy:
+    provider: script
+    script: docker push abhi8sinha/node
+    on:
+        branch: master
