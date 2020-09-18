@@ -3,5 +3,5 @@ service:
     - docker
 
 script:
-    - docker build -t abhi8sinha/node .
-    - docker images abhi8sinha/node 
+    - docker build -t abhi8sinha/testDocker .
+    - docker images abhi8sinha/testDocker 
